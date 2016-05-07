@@ -10,46 +10,46 @@ select
 	-- FOLHA PONTO
 	fp.id_empregado,
 	fp.id AS id_folha_ponto,
-	fp.ano,
-	fp.mes,
-	fp.carga_horaria,
+	fp.nu_ano,
+	fp.nu_mes,
+	fp.hr_carga_horaria,
 	-- FOLHA PONTO STATUS
 	fps.id as id_folha_ponto_status,
-	fps.nome,
+	fps.nm_folha_ponto_status,
 	-- LANCAMENTO HORAS
 	lh.id as id_lancamento_horas,
-	lh.dia_mes,
+	lh.nu_dia_mes,
 	-- DIA SEMANA
 	ds.id as id_dia_semana,
-	ds.sigla,
+	ds.sg_dia_semana,
 	-- ANEXO
 	count(lha.*) as count_anexos
 from
-	folha_ponto as fp
-	inner join folha_ponto_status as fps
+	tb_folha_ponto as fp
+	inner join tb_folha_ponto_status as fps
 		on fps.id = fp.id_folha_ponto_status
-	left join lancamento_horas as lh
+	left join tb_lancamento_horas as lh
 		on lh.id_folha_ponto = fp.id
-	left join dia_semana as ds
+	left join tb_dia_semana as ds
 		on ds.id = lh.id_dia_semana
-	left join lancamento_horas_anexo as lha
+	left join tb_lancamento_horas_anexo as lha
 		on lha.id_lancamento_horas = lh.id
 group by
 	-- FOLHA PONTO
 	fp.id_empregado,
 	fp.id,
-	fp.ano,
-	fp.mes,
-	fp.carga_horaria,
+	fp.nu_ano,
+	fp.nu_mes,
+	fp.hr_carga_horaria,
 	-- FOLHA PONTO STATUS
 	fps.id,
-	fps.nome,
+	fps.nm_folha_ponto_status,
 	-- LANCAMENTO HORAS
 	lh.id,
-	lh.dia_mes,
+	lh.nu_dia_mes,
 	-- DIA SEMANA
 	ds.id,
-	ds.sigla
+	ds.sg_dia_semana
 order by
-	fp.ano,
-	fp.mes
+	fp.nu_ano,
+	fp.nu_mes
