@@ -58,6 +58,7 @@ CREATE TABLE tb_empregado_funcao (
 	CONSTRAINT pk_empregado_funcao PRIMARY KEY (id)
 );
 
+
 COMMENT ON TABLE tb_empregado_funcao IS 'Tabela que armazena as informações das funções que os empregados podem exercer na empresa';
 
 COMMENT ON COLUMN tb_empregado_funcao.id IS 'Identificador da função do empregado';
