@@ -1,1 +1,0 @@
-Aqui vai entrar o projeto, posso pensar em utilizar uma pasta para cada linguagem, por exemplo um para .NET ou para Python, ou para Um desse com AngularJS (webapi), etc.
