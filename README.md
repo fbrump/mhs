@@ -1,4 +1,4 @@
-# mhs
+# MHS- Sistema de Gerenciamento de Horas
 Armazenamento do projeto opensource de gerenciamento de horas.
 
 ## Configuração:
