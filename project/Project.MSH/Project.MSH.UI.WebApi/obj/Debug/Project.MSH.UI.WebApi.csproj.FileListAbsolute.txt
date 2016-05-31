@@ -29,6 +29,9 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.S
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.Security.OAuth.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.Security.Twitter.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Web.Infrastructure.dll
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\MySql.Data.dll
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\MySql.Data.Entity.EF6.dll
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\MySql.Fabric.Plugin.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Newtonsoft.Json.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Owin.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Project.MSH.BEL.dll

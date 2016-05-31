@@ -3,11 +3,11 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\Project.MSH.BLL.
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\Project.MSH.BEL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\Project.MSH.DAL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\EntityFramework.dll
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\MySql.Data.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\Project.MSH.BEL.pdb
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\Project.MSH.DAL.pdb
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\EntityFramework.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\obj\Debug\Project.MSH.BLL.csprojResolveAssemblyReference.cache
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\obj\Debug\Project.MSH.BLL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\obj\Debug\Project.MSH.BLL.pdb
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\MySql.Data.Entity.EF6.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BLL\bin\Debug\MySql.Data.dll

@@ -4,6 +4,7 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\Project.MSH.DAL.
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\EntityFramework.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\MySql.Data.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\MySql.Data.Entity.EF6.dll
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\MySql.Fabric.Plugin.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\Project.MSH.BEL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\Project.MSH.BEL.pdb
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\EntityFramework.xml
