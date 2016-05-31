@@ -3,7 +3,7 @@ Armazenamento do projeto opensource de gerenciamento de horas.
 
 ## Configuração:
 
-- ~postgreSQL 9.4.7~
+- ~~postgreSQL 9.4.7~~
 - MySQL - Base de dados.
 - UnitTestProject - Teste unitários.
 - Entity Framework 6 - ORM, com o FluentAPI para o mapeamento das tabelas.
