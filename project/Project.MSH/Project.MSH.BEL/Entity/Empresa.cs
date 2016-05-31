@@ -7,10 +7,8 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Project.MSH.BEL.Entity
 {
-    [Table("tb_empresa")]
     public class Empresa
     {
-        [Key]
         /// <summary>
         /// id integer NOT NULL DEFAULT nextval('tb_empresa_id_seq'::regclass), -- Identificador da empresa
         /// </summary>

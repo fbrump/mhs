@@ -1,4 +1,3 @@
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\obj\Debug\Project.MSH.UI.WebApi.csprojResolveAssemblyReference.cache
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\roslyn\csc.exe
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -30,10 +29,7 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.S
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.Security.OAuth.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.Security.Twitter.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Web.Infrastructure.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Mono.Security.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Newtonsoft.Json.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Npgsql.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Npgsql.EntityFramework.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Owin.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Project.MSH.BEL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Project.MSH.BLL.dll
@@ -52,8 +48,6 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\WebGrease.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Project.MSH.BEL.pdb
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Project.MSH.BLL.pdb
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Npgsql.xml
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Npgsql.EntityFramework.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Newtonsoft.Json.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\System.Net.Http.Formatting.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\System.Web.Helpers.xml
@@ -80,11 +74,6 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.S
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.Security.Twitter.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\System.Web.Http.Owin.xml
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\de\Npgsql.resources.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\es\Npgsql.resources.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\fi\Npgsql.resources.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\fr\Npgsql.resources.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\ja\Npgsql.resources.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\zh-CN\Npgsql.resources.dll
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\obj\Debug\Project.MSH.UI.WebApi.csprojResolveAssemblyReference.cache
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\obj\Debug\Project.MSH.UI.WebApi.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\obj\Debug\Project.MSH.UI.WebApi.pdb
