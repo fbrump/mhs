@@ -2,7 +2,6 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.Tes
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.Test.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.Test.pdb
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\EntityFramework.dll
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\MySql.Data.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\MySql.Fabric.Plugin.dll

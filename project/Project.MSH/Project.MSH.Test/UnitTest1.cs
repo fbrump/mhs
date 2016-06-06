@@ -13,28 +13,24 @@ namespace Project.MSH.Test
     public class UnitTest1
     {
         private string strConnection = "User Id=postgres;Server=localhost;Password=admin123;Database=db_mhs;";
-        [TestMethod, Ignore]
-        public void deveria_conectar_no_banco_de_dados()
+        [TestMethod]
+        public void should_connect_with_database()
         {
             try
             {
                 // arrange:
                 var conexao = false;
-                var query = new List<Empresa>();
+
                 using (var ctx = new DAL.Context.DbContextModel())
                 //using (var ctx = new Npgsql.NpgsqlConnection(strConnection))
                 {
                     //var l = ctx.Database;
                     conexao = ctx.Database.Exists();
-                    query = (
-                        from t in ctx.Empresa
-                        select t
-                    ).ToList();
                 }
                 // act:
 
                 // asset:
-                Assert.AreEqual(0, query.Count, "Não existe registro na tabela empresa");
+                //Assert.AreEqual(0, query.Count, "Não existe registro na tabela empresa");
                 Assert.IsTrue(conexao, "Não existe o banco de dados");
             }
             catch (Exception e)
@@ -45,7 +41,7 @@ namespace Project.MSH.Test
             
         }
 
-        [TestMethod]
+        [TestMethod, Ignore]
         public void deveria_trazer_pessoas()
         {
             try
