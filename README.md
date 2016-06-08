@@ -5,7 +5,8 @@ Armazenamento do projeto opensource de gerenciamento de horas.
 
 - ~~postgreSQL 9.4.7~~
 - MySQL - Base de dados.
-- UnitTestProject - Teste unitários.
+- Microsoft.VisualStudio.TestTools.UnitTesting - Teste unitários.
+- Moq - Mock
 - Entity Framework 6 - ORM, com o FluentAPI para o mapeamento das tabelas.
 
 ## Documentação:
