@@ -86,7 +86,12 @@ namespace Project.MSH.DAL.Repository
         {
             try
             {
-                DbSet.Add(pEntity);
+                //DbSet.Add(pEntity);
+
+                Context.Set<T>().Add(pEntity);
+
+                Context.SaveChanges();
+
             }
             catch (Exception e)
             {
@@ -98,7 +103,12 @@ namespace Project.MSH.DAL.Repository
         {
             try
             {
-                Context.Entry(pEntity).State = EntityState.Modified;
+                using (var ctx = Context)
+                {
+                    ctx.Entry(pEntity).State = EntityState.Modified;
+
+                    ctx.SaveChanges();
+                }
 
                 return pEntity;
             }
