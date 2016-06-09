@@ -6,6 +6,12 @@ using Project.MSH.DAL.Context;
 using System.Linq;
 using Project.MSH.DAL.Interface;
 using Moq;
+using System.Net.Http;
+using System.Net;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
+using System.Threading.Tasks;
+using System.Globalization;
 
 namespace Project.MSH.Test
 {
@@ -94,7 +100,8 @@ namespace Project.MSH.Test
         }
 
         [TestMethod]
-        public void should_insert_new_person() {
+        public void should_insert_new_person()
+        {
             try
             {
                 // arrange:
@@ -105,7 +112,7 @@ namespace Project.MSH.Test
                 item.nome = "Carol";
                 item.sobrenome = "Crews";
                 item.dataNascimento = new DateTime(1977, 05, 24);
-                
+
                 // act:
                 rep.Object.Insert(item);
 
@@ -184,12 +191,12 @@ namespace Project.MSH.Test
             {
                 System.Net.Http.HttpClient client = new System.Net.Http.HttpClient();
                 Uri usuarioURI;
-                client.BaseAddress = new Uri(@"http://uinames.com/api/");
+                client.BaseAddress = new Uri(@"http://api.randomuser.me/"); // new Uri(@"http://uinames.com/api/");
                 client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
                 //client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.NameValueWithParametersHeaderValue("results", "50"));
 
                 //
-                System.Net.Http.HttpResponseMessage response = client.GetAsync("").Result;
+                System.Net.Http.HttpResponseMessage response = client.GetAsync("?results=50").Result;
                 if (response.IsSuccessStatusCode)
                 {
                     usuarioURI = response.Headers.Location;
@@ -206,6 +213,101 @@ namespace Project.MSH.Test
             {
                 throw e;
             }
+        }
+
+        [TestMethod]
+        public void should_inserts_generic_name_on_database_others()
+        {
+            try
+            {
+                var lstPessoa = new List<Pessoa>();
+                using (var client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(@"http://api.randomuser.me/");
+                    client.DefaultRequestHeaders.Accept.Clear();
+                    client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+
+                    HttpResponseMessage response = client.GetAsync("?nat=BR&results=5000", HttpCompletionOption.ResponseContentRead).Result;
+                    if (response.IsSuccessStatusCode)
+                    {
+                        var objsStream = response.Content.ReadAsStringAsync().Result;//.ReadAsStringAsync();//ReadAsAsunc<IEnumerable<Object>>().Result;
+                        var arrString = objsStream.Split('[').ToArray()[1].Split(',');
+                        var lst = new List<PessoaFake>();
+                        PessoaFake item = null;
+                        foreach (var itemJson in arrString)
+                        {
+                            var spl = itemJson.Split(':');
+                            var key1 = spl[0].ToString().Replace("{", "").Replace("\"", "");
+                            var val2 = spl[1].ToString().Replace("}", "").Replace("\"", "");
+
+                            if (key1 == "gender")
+                            {
+                                if (item == null)
+                                {
+                                    item = new PessoaFake();
+                                }
+                                if (item != null)
+                                    item.gender = val2;
+                            }
+                            if (key1 == "first")
+                                if (item != null)
+                                    item.name.first = val2;
+                            if (key1 == "last")
+                            {
+                                if (item != null)
+                                    item.name.last = val2;
+                                lst.Add(item);
+                                item = null;
+                            }
+                        }
+
+                        
+                        var _pessoa = new Pessoa();
+                        var dateStart = new DateTime(1970, 01, 01);
+                        var dateEnd = new DateTime(2000, 01, 01);
+                        foreach (var pessoa in lst)
+                        {
+                            _pessoa = new Pessoa();
+
+                            _pessoa.nome = pessoa.name.first;
+                            _pessoa.sobrenome = pessoa.name.last;
+                            _pessoa.dataNascimento = GetRandomDate(dateStart, dateEnd);
+                            lstPessoa.Add(_pessoa);
+                        }
+
+                        //var m = Task.Factory.StartNew(() => JsonConvert.DeserializeObjectAsync<PessoaFake>(objsStream.ToString()));
+                    }
+                }
+
+                IPessoaRepository rep = new DAL.Repository.PessoaRepository();
+
+                foreach (var itemPessoa in lstPessoa)
+                {
+                    rep.Insert(itemPessoa);
+                }
+            }
+            catch (HttpRequestException eHttpReq)
+            {
+                throw eHttpReq;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+
+        private static readonly Random rnd = new Random();
+        private static DateTime GetRandomDate(DateTime from, DateTime to)
+        {
+            var range = to - from;
+            var randTimeSpan = new TimeSpan((long)(rnd.NextDouble() * range.Ticks));
+            return from + randTimeSpan;
+        }
+
+        private int randBetween(int v1, int v2)
+        {
+            var r = new Random();
+            return v1 + (int)Math.Round((decimal)(r.Next() * (v2 - v1)));
         }
     }
 }

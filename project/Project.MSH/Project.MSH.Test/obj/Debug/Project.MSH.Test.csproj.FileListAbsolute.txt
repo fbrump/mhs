@@ -7,6 +7,7 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Moq.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\MySql.Data.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\MySql.Data.Entity.EF6.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\MySql.Fabric.Plugin.dll
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Newtonsoft.Json.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.BEL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.DAL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.BEL.pdb
@@ -14,6 +15,7 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.DAL
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Castle.Core.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\EntityFramework.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Moq.xml
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Newtonsoft.Json.xml
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\obj\Debug\Project.MSH.Test.csprojResolveAssemblyReference.cache
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\obj\Debug\Project.MSH.Test.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\obj\Debug\Project.MSH.Test.pdb
