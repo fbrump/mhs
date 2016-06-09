@@ -215,7 +215,7 @@ namespace Project.MSH.Test
             }
         }
 
-        [TestMethod]
+        [TestMethod, Ignore]
         public void should_inserts_generic_name_on_database_others()
         {
             try
