@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Context\DbContextModel.cs" />
+    <Compile Include="Factory\FactoryRepository.cs" />
     <Compile Include="Interface\IPessoaRepository.cs" />
     <Compile Include="Interface\IRepository.cs" />
     <Compile Include="Mapping\EmpresaMap.cs" />

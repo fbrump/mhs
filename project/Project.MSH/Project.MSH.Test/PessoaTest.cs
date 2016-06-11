@@ -12,12 +12,24 @@ using System.Runtime.Serialization;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.Globalization;
+using Project.MSH.DAL.Factory;
 
 namespace Project.MSH.Test
 {
     [TestClass]
     public class PessoaTest
     {
+        #region [ Propety ]
+        private IPessoaRepository RepositoryPerson
+        {
+            get {
+                return new FactoryRepository<IPessoaRepository>().Get();
+            }
+        }
+        #endregion
+
+        #region [ Tests ]
+
         [TestMethod]
         public void should_select_all_people()
         {
@@ -26,7 +38,7 @@ namespace Project.MSH.Test
                 // arrange:
                 var conexao = false;
                 var query = Enumerable.Empty<Pessoa>();
-                DAL.Interface.IPessoaRepository rep = new DAL.Repository.PessoaRepository();
+                DAL.Interface.IPessoaRepository rep = this.RepositoryPerson;
                 //using (var ctx = new DbContextModel())
                 //{
                 //    //var l = ctx.Database;
@@ -56,7 +68,7 @@ namespace Project.MSH.Test
             {
                 // arrange:
                 var item = new Pessoa();
-                DAL.Interface.IPessoaRepository rep = new DAL.Repository.PessoaRepository();
+                DAL.Interface.IPessoaRepository rep = this.RepositoryPerson;
                 item.id = 3;
                 item.nome = "Rafael";
                 // act:
@@ -82,7 +94,7 @@ namespace Project.MSH.Test
                 // arrange:
                 var filter = new Pessoa();
                 var query = Enumerable.Empty<Pessoa>();
-                DAL.Interface.IPessoaRepository rep = new DAL.Repository.PessoaRepository();
+                DAL.Interface.IPessoaRepository rep = this.RepositoryPerson;
                 filter.dataNascimento = new DateTime(1990, 1, 1);
 
                 // act:
@@ -261,7 +273,7 @@ namespace Project.MSH.Test
                             }
                         }
 
-                        
+
                         var _pessoa = new Pessoa();
                         var dateStart = new DateTime(1970, 01, 01);
                         var dateEnd = new DateTime(2000, 01, 01);
@@ -279,7 +291,7 @@ namespace Project.MSH.Test
                     }
                 }
 
-                IPessoaRepository rep = new DAL.Repository.PessoaRepository();
+                IPessoaRepository rep = this.RepositoryPerson;
 
                 foreach (var itemPessoa in lstPessoa)
                 {
@@ -296,7 +308,33 @@ namespace Project.MSH.Test
             }
         }
 
+        [TestMethod]
+        public void should_instance_repository_interface_by_factory()
+        {
+            try
+            {
+                // arrange:
+                IPessoaRepository repository;
+                var factory = new FactoryRepository<IPessoaRepository>();
+                // act
+                repository = factory.Get();
+                // asset:
+                Assert.IsNotNull(repository.GetType().GetInterface("IPessoaRepository"), "Not implemente the correct interface");
+                //Assert.IsTrue(repository.GetType().IsInstanceOfType(repositoryOther), "Not instance the new object of repository");
+            }
+            catch (Exception e)
+            {
+                Assert.Fail(e.Message);
+                throw e;
+            }
+        }
+
+        #endregion
+
+        #region [ Private Methos ]
+
         private static readonly Random rnd = new Random();
+
         private static DateTime GetRandomDate(DateTime from, DateTime to)
         {
             var range = to - from;
@@ -309,5 +347,7 @@ namespace Project.MSH.Test
             var r = new Random();
             return v1 + (int)Math.Round((decimal)(r.Next() * (v2 - v1)));
         }
+
+        #endregion
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.MSH.DAL.Mapping
 {
-    public class EmpresaMap : EntityTypeConfiguration<Empresa>
+    internal class EmpresaMap : EntityTypeConfiguration<Empresa>
     {
         public EmpresaMap()
         {

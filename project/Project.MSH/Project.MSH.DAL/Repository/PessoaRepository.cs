@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Project.MSH.DAL.Repository
 {
-    public class PessoaRepository : BaseRepository<Pessoa>, IPessoaRepository
+    internal class PessoaRepository : BaseRepository<Pessoa>, IPessoaRepository
     {
         public PessoaRepository() : base() { }
         public PessoaRepository(Context.DbContextModel pContext) : base(pContext) { }
