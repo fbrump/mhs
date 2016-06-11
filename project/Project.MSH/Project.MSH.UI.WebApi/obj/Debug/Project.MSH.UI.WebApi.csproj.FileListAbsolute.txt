@@ -80,3 +80,5 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\System.Web.Http.
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\obj\Debug\Project.MSH.UI.WebApi.csprojResolveAssemblyReference.cache
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\obj\Debug\Project.MSH.UI.WebApi.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\obj\Debug\Project.MSH.UI.WebApi.pdb
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Project.MSH.UI.WebApi.dll.CodeAnalysisLog.xml
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.UI.WebApi\bin\Project.MSH.UI.WebApi.dll.lastcodeanalysissucceeded

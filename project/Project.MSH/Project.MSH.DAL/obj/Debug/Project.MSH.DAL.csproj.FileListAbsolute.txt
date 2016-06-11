@@ -11,3 +11,5 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\EntityFramework.
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\obj\Debug\Project.MSH.DAL.csprojResolveAssemblyReference.cache
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\obj\Debug\Project.MSH.DAL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\obj\Debug\Project.MSH.DAL.pdb
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\Project.MSH.DAL.dll.CodeAnalysisLog.xml
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.DAL\bin\Debug\Project.MSH.DAL.dll.lastcodeanalysissucceeded

@@ -19,3 +19,5 @@ C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Newtonsoft.Json
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\obj\Debug\Project.MSH.Test.csprojResolveAssemblyReference.cache
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\obj\Debug\Project.MSH.Test.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\obj\Debug\Project.MSH.Test.pdb
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.Test.dll.CodeAnalysisLog.xml
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.Test\bin\Debug\Project.MSH.Test.dll.lastcodeanalysissucceeded

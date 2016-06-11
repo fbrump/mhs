@@ -1,5 +1,6 @@
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BEL\bin\Debug\Project.MSH.BEL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BEL\bin\Debug\Project.MSH.BEL.pdb
-C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BEL\obj\Debug\Project.MSH.BEL.csprojResolveAssemblyReference.cache
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BEL\obj\Debug\Project.MSH.BEL.dll
 C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BEL\obj\Debug\Project.MSH.BEL.pdb
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BEL\bin\Debug\Project.MSH.BEL.dll.CodeAnalysisLog.xml
+C:\_Brum\_git\mhs\project\Project.MSH\Project.MSH.BEL\bin\Debug\Project.MSH.BEL.dll.lastcodeanalysissucceeded
