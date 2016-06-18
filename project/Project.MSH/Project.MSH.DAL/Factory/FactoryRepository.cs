@@ -78,6 +78,7 @@ namespace Project.MSH.DAL.Factory
         private void CreateDictionary()
         {
             _dic.Add(typeof(IPessoaRepository), new PessoaRepository());
+            _dic.Add(typeof(IEmpresaRepository), new EmpresaRepository());
         }
 
         #endregion
