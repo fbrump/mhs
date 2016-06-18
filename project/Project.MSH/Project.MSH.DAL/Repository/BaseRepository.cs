@@ -41,7 +41,9 @@ namespace Project.MSH.DAL.Repository
             {
                 using (var ctx = this.Context)
                 {
-                    ctx.Set<T>().Remove(pEntity);
+                    //ctx.Set<T>().Remove(pEntity);
+                    ctx.Entry(pEntity).State = EntityState.Deleted;
+                    
                     ctx.SaveChanges();
                 }
             }
